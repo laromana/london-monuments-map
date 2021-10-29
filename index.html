@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ccs/style.css" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <title>London Monuments</title>
+  </head>
+  <body>
+    <div class="main-title">
+      <h1>Visit London Monuments</h1>
+    </div>
+    <div class="form-map-container">
+      <!-- Filter form -->
+      <div class="filter-form">
+        <form action="#">
+          <label for="categories">Choose a category</label>
+          <select name="categories" id="category">
+            <option value=" "></option>
+            <option value="art">Art</option>
+            <option value="science">Science</option>
+            <option value="military">Military</option>
+            <option value="architecture">Architecture</option>
+            <option value="religious">Religious</option>
+          </select>
+          <label for="museum">Local Museum</label>
+          <select name="museum" id="museum">
+            <option value=" "></option>
+            <option value="local-museum">Yes</option>
+          </select>
+          <label for="layers">Select Layer</label>
+          <select name="layers" id="layers">
+            <option value="streets">Streets</option>
+            <option value="light">Light</option>
+            <option value="outdoors">Outdoors</option>
+            <option value="dark">Dark</option>
+            <option value="satellite">Satellite</option>
+            <option value="satelliteStreets">Satellite Streets</option>
+            <option value="navigationDay">Navigation Day</option>
+            <option value="navigationNight">Navigation Night</option>
+          </select>
+        </form>
+      </div>
+      <div id="map"></div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

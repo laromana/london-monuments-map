@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-title {
+  width: 100vw;
+  height: 10vh;
+  border: solid 3px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-map-container {
+  width: 100vw;
+  height: 90vh;
+  border: royalblue solid 3px;
+  display: flex;
+}
+
+.filter-form {
+  width: 20%;
+  height: 100%;
+  border: solid 3px green;
+}
+
+#map {
+  width: 80%;
+  height: 100%;
+  border: orange solid 3px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
