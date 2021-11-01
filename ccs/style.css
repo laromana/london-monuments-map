@@ -36,3 +36,38 @@ form {
   display: flex;
   flex-direction: column;
 }
+
+#marker-popup {
+  display: none;
+}
+
+.mapboxgl-popup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 5px;
+  /* width: 600px; */
+  height: 450px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.mapboxgl-popup-content h2 {
+  color: blue;
+}
+
+.mapboxgl-popup-content span {
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.mapboxgl-popup-content img {
+  height: 250px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.mapboxgl-popup-content p {
+  font-size: 14px;
+}
