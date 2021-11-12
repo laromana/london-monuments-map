@@ -7,7 +7,7 @@
 .main-title {
   width: 100vw;
   height: 10vh;
-  border: solid 3px red;
+  /* border: solid 3px red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,20 +16,22 @@
 .form-map-container {
   width: 100vw;
   height: 90vh;
-  border: royalblue solid 3px;
+  /* border: royalblue solid 3px; */
   display: flex;
 }
 
 .filter-form {
+  padding-top: 20px;
   width: 20%;
   height: 100%;
-  border: solid 3px green;
+  /* border: solid 3px green; */
+  background: gainsboro;
 }
 
 #map {
   width: 80%;
   height: 100%;
-  border: orange solid 3px;
+  /* border: orange solid 3px; */
 }
 
 form {

@@ -107,6 +107,10 @@ const map = new mapboxgl.Map({
   zoom: 11, // starting zoom
 });
 
+//Add navigation control(zoom)
+const nav = new mapboxgl.NavigationControl();
+map.addControl(nav, "top-right");
+
 //Array of markers to push all markers to during loop
 let currentMarkers = [];
 
