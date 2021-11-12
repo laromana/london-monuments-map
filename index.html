@@ -11,30 +11,30 @@
       rel="stylesheet"
     />
 
-    <title>London Monuments</title>
+    <title>London Monuments Copy</title>
   </head>
   <body>
     <div class="main-title">
-      <h1>Visit London Monuments</h1>
+      <h1>Visit London Monuments Copy</h1>
     </div>
     <div class="form-map-container">
       <!-- Filter form -->
       <div class="filter-form">
-        <form action="#">
+        <form id="filter-options" action="#">
           <label for="categories">Choose a category</label>
           <select name="categories" id="category">
-            <option value=" "></option>
+            <option value="all">All</option>
             <option value="art">Art</option>
             <option value="science">Science</option>
             <option value="military">Military</option>
             <option value="architecture">Architecture</option>
             <option value="religious">Religious</option>
           </select>
-          <label for="museum">Local Museum</label>
+          <!-- <label for="museum">Local Museum</label>
           <select name="museum" id="museum">
             <option value=" "></option>
             <option value="local-museum">Yes</option>
-          </select>
+          </select> -->
           <label for="layers">Select Layer</label>
           <select name="layers" id="layers">
             <option value="streets">Streets</option>
@@ -46,6 +46,7 @@
             <option value="navigationDay">Navigation Day</option>
             <option value="navigationNight">Navigation Night</option>
           </select>
+          <!-- <button id="filter">Filter</button> -->
         </form>
       </div>
       <div id="map"></div>
