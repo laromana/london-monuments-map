@@ -104,11 +104,9 @@ form {
     /* width: 70%; */
     position: relative;
     /*left: -50px; */
-    border: greenyellow 2px solid;
   }
   #map {
     width: 100%;
-    border: royalblue solid 2px;
   }
 
   .fa-times {
