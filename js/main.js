@@ -193,3 +193,18 @@ category.addEventListener(
   },
   false
 );
+
+let mapSearch = document.querySelector(".fa-search");
+let filterForm = document.querySelector(".filter-form");
+let mapDiv = document.querySelector("#map");
+mapSearch.addEventListener("click", function () {
+  filterForm.style.display = "flex";
+  filterForm.style.width = "50%";
+  mapDiv.style.width = "50%";
+});
+
+let closeFilter = document.querySelector(".fa-times");
+closeFilter.addEventListener("click", function () {
+  filterForm.style.display = "none";
+  mapDiv.style.width = "100%";
+});

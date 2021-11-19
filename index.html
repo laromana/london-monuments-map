@@ -17,19 +17,24 @@
       href="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>London Monuments</title>
   </head>
   <body>
-    <div class="container main-title">
-      <h1>Visit London Monuments</h1>
+    <div class="main-title">
+      
+      <img id="logo" src="img/logo.png" alt="">
+      <h1 class="title-text"><span>London</span> Monuments</h1>
+      
+      </div>
     </div>
     <div class="form-map-container">
       <!-- Filter form -->
       <div class="filter-form">
+        <i class="fas fa-times"></i>
         <form class="container" id="filter-options" action="#">
           <label for="categories">Choose a category</label>
-          <select class="form-select" name="categories" id="category">
+          <select class="form-select text-success fw-bold" name="categories" id="category">
             <option value="all">All</option>
             <option value="art">Art</option>
             <option value="science">Science</option>
@@ -43,7 +48,7 @@
             <option value="local-museum">Yes</option>
           </select> -->
           <label for="layers">Select Layer</label>
-          <select class="form-select" name="layers" id="layers">
+          <select class="form-select text-success fw-bold" name="layers" id="layers">
             <option value="streets">Streets</option>
             <option value="light">Light</option>
             <option value="outdoors">Outdoors</option>
@@ -56,7 +61,8 @@
           <!-- <button id="filter">Filter</button> -->
         </form>
       </div>
-      <div id="map"></div>
+      
+      <div id="map"><div class="filter-mobile"><i class="fas fa-search"></i></div></div>
       <div style="font-weight: 600; width: 300px" id="marker-popup"></div>
     </div>
     <script src="js/main.js"></script>
